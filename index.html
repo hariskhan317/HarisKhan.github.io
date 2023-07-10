@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="./style/tailwind.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media screen and (min-width: 1800px) {
+        .container{
+            width: 1600px !important;
+        }
+    }
+  </style>
+</head>
+<body class="bg-black w-9/12 container mx-auto"> 
+    <section class="">
+        <div class="bg-[#18181b] h-full border-x border-[rgba(63,63,70,.4)] mx-auto py-5 px-10">
+            <!-- header -->
+            <header class="mx-auto lg:w-1/2 py-1"> 
+                <nav :class="{'flex': open, 'hidden': !open}" class="bg-[#252529] border rounded-full border-[rgba(63,63,70,.4)] flex justify-center gap-20 py-3 space-x-7">
+                    <a class="text-sm font-inter font-semibold focus:outline-none text-[#e5e7eb] hover:text-[#14b8a6] transition-all delay-100" href="#">About</a>
+                    <a class="text-sm font-inter font-semibold focus:outline-none text-[#e5e7eb] hover:text-[#14b8a6] transition-all delay-100" href="#">Projects</a>
+                    <a class="text-sm font-inter font-semibold focus:outline-none text-[#e5e7eb] hover:text-[#14b8a6] transition-all delay-100" href="#">Contact</a> 
+                </nav>
+            </header>
+
+            <!-- Profile -->
+            <section>
+                <div class="mt-20">
+                    <!-- intro -->
+                    <div class="">
+                        <h1 class="pt-4 text-6xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">Haris Khan.</h1>
+                        <div class="xl:w-9/12">
+                            <p class="pt-6 text-lg font-inter font-normal focus:outline-none text-[#A1a1a1]">
+                                I am a passionate and detail-oriented junior data analyst with a strong background in software engineering from Pakistan. With a solid foundation in SQL, Tableau, and Excel, I possess the technical skills necessary to extract insights from complex datasets and transform them into actionable information.
+                                <br><br> In addition to my technical skills, I possess a strong understanding of statistical concepts and methodologies, which enables me to apply statistical analysis techniques to derive meaningful insights and make data-driven recommendations.
+                                <br><br> Throughout my academic and professional experiences, I have successfully completed several projects that involved analyzing large datasets, identifying trends, and delivering actionable insights to support decision-making. I am adept at collaborating with cross-functional teams, communicating complex findings to non-technical stakeholders, and delivering high-quality results within deadlines.
+                                <br><br> Thank you for visiting my portfolio website. Feel free to explore my projects and contact me with any opportunities or collaborations. I look forward to connecting with you!
+                            </p>
+                        </div>
+                    </div>
+                     <!-- social media  -->
+                    <div class="space-y-5 mt-10">
+                        <div class="font-inter text-[#A1a1a1] hover:text-white transition-all delay-100 cursor-pointer">
+                            <a class="flex gap-5" href="https://twitter.com/home" target="_blank">
+                                <i class="fa-brands fa-twitter text-2xl"></i>
+                                <p class="mt-0.5 text-lg font-semibold">Follow On Twitter</p>
+                            </a> 
+                        </div>
+                        <div class="font-inter text-[#A1a1a1] hover:text-white transition-all delay-100 cursor-pointer">                
+                            <a class="flex gap-5" href="https://github.com/hariskhan317" target="_blank">
+                                <i class="fa-brands fa-github text-2xl"></i>
+                                <p class="mt-0.5 text-lg font-semibold">Follow On Github</p>
+                            </a>  
+                        </div>
+                        <div class="font-inter text-[#A1a1a1] hover:text-white transition-all delay-100 cursor-pointer">
+                            <a href="" class="flex gap-5">
+                                <i class="fa-brands fa-instagram mt-0.5 text-2xl"></i>
+                                <p class="mt-0.5 text-lg font-inter font-semibold">Follow On Instagram</p>
+                            </a> 
+                        </div>
+                        <div class="font-inter text-[#A1a1a1] hover:text-white transition-all delay-100 cursor-pointer">
+                            <a href="https://www.linkedin.com/in/haris-khan317/" target="_blank" class="flex gap-5">
+                                <i class="fa-brands fa-linkedin text-2xl"></i>
+                                <p class="mt-0.5 text-lg font-semibold">Follow On LinkedIn</p>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <div class="mt-20">
+                    <div> 
+                        <h1 class="pt-4 text-3xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">Projects</h1>
+                        <p class="py-6 text-base font-inter font-normal focus:outline-none text-[#A1a1a1]">Within the realm of data analysis, I have embarked on various impactful projects that aim to uncover valuable insights and make a meaningful contribution. These projects showcase my expertise in collecting, analyzing, and interpreting data to derive actionable conclusions.</p>
+                    </div>
+                    <!-- project section -->
+                    <div class="mt-6 border-t border-white/10 cursor-pointer space-y-10">
+                        <div class="grid grid-cols-2">
+                            <!-- Project-1 -->
+                            <div class="mt-5 grid grid-cols-7 gap-10 border border-transparent hover:border-[rgba(63,63,70,.4)] rounded-lg p-3 hover:bg-[#252529] transition-all delay-100 ">
+                                <div class="col-span-3 relative">
+                                    <div class="absolute top-0 left-0 h-full w-full rounded-lg" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                                    <div class="">
+                                        <img src="./img/world pouplation.avif" class="w-full border border-[rgba(63,63,70,.4)] rounded-lg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-span-4">
+                                    <div class="mt-1 flex justify-between">
+                                        <h1 class="text-2xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">World Population</h1>
+                                        <div class="px-2 pt-1 h-7 text-xs border-2 border-[rgba(63,63,70,.4)] font-inter font-semibold bg-[#252529] text-[#A1a1a1] rounded-full">Tableau</div>
+                                    </div>
+                                    <p class="py-3 text-xs font-inter font-normal focus:outline-none text-[#A1a1a1]">This project explores global population, fertility rate, and birth rate. Through interactive visualizations, it reveals trends and relationships between these indicators, enabling a better understanding of demographic patterns and their impact on population growth.</p>
+                                    <a href="https://public.tableau.com/app/profile/haris.khan5591/viz/WorldPopulation_16886888523310/Dashboard1" target="_blank" class="mt-6 text-[#14b8a6] text-base font-inter hover:underline transition-all delay-100">View Project <i class="fa-solid fa-arrow-right-long text-sm "></i> </a>
+                                </div>
+                            </div>
+                            <!-- Project-2 -->
+                            <div class="mt-5 grid grid-cols-7 gap-10 border border-transparent hover:border-[rgba(63,63,70,.4)] rounded-lg p-3 hover:bg-[#252529] transition-all delay-100 ">
+                                <div class="col-span-3 relative">
+                                    <div class="absolute top-0 left-0 h-full w-full rounded-lg" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                                    <div class="">
+                                        <img src="./img/covid19.avif" class="w-full border border-[rgba(63,63,70,.4)] rounded-lg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-span-4">
+                                    <div class="mt-1 flex justify-between">
+                                        <h1 class="text-2xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">COVID-19 Data</h1>
+                                        <div class="px-2 pt-1 h-7 text-xs border-2 border-[rgba(63,63,70,.4)] font-inter font-semibold bg-[#252529] text-[#A1a1a1] rounded-full">Sql</div>
+                                    </div>
+                                    <p class="py-3 text-xs font-inter font-normal focus:outline-none text-[#A1a1a1]">For my Portfolio Project, I took charge of elaborating and cleaning COVID-19 data using SQL. Employing advanced querying and data cleaning techniques, I achieved data accuracy and consistency. Through insightful visualizations, I effectively conveyed key findings for a comprehensive understanding of the pandemic's impact.</p>
+                                    <a href="https://github.com/hariskhan317/COVID-PORTFOLIO-PROJECT-DATA-EXPLORATION" target="_blank" class="mt-6 text-[#14b8a6] text-base font-inter hover:underline transition-all delay-100">View Project <i class="fa-solid fa-arrow-right-long text-sm "></i> </a>
+                                </div>
+                            </div>
+                            <!-- Project-3 -->
+                            <div class="mt-5 grid grid-cols-7 gap-10 border border-transparent hover:border-[rgba(63,63,70,.4)] rounded-lg p-3 hover:bg-[#252529] transition-all delay-100 ">
+                                <div class="col-span-3 relative">
+                                    <div class="absolute top-0 left-0 h-full w-full rounded-lg" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                                    <div class="">
+                                        <img src="./img/startups.avif" class="w-full border border-[rgba(63,63,70,.4)] rounded-lg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-span-4">
+                                    <div class="mt-1 flex justify-between">
+                                        <h1 class="text-2xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">Startups Investment</h1>
+                                        <div class="px-2 pt-1 h-7 text-xs border-2 border-[rgba(63,63,70,.4)] font-inter font-semibold bg-[#252529] text-[#A1a1a1] rounded-full">Tableau</div>
+                                    </div>
+                                    <p class="py-3 text-xs font-inter font-normal focus:outline-none text-[#A1a1a1]">This project focuses on revenue, growth, and profit analysis. Utilizing interactive visualizations, it provides insights into the financial performance of startups. It aids in understanding revenue sources, identifying growth opportunities, and optimizing profitability for business success.</p>
+                                    <a href="https://public.tableau.com/app/profile/haris.khan5591/viz/BestInvestment/Dashboard1" target="_blank" class="mt-6 text-[#14b8a6] text-base font-inter hover:underline transition-all delay-100">View Project <i class="fa-solid fa-arrow-right-long text-sm "></i> </a>
+                                </div>
+                            </div>
+                            <!-- Project-4 -->
+                            <div class="mt-5 grid grid-cols-7 gap-10 border border-transparent hover:border-[rgba(63,63,70,.4)] rounded-lg p-3 hover:bg-[#252529] transition-all delay-100 ">
+                                <div class="col-span-3 relative">
+                                    <div class="absolute top-0 left-0 h-full w-full rounded-lg" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                                    <div class="">
+                                        <img src="./img/Housing property.avif" class="w-full border border-[rgba(63,63,70,.4)] rounded-lg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-span-4">
+                                    <div class="mt-1 flex justify-between">
+                                        <h1 class="text-2xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">Nashville</h1>
+                                        <div class="px-2 pt-1 h-7 text-xs border-2 border-[rgba(63,63,70,.4)] font-inter font-semibold bg-[#252529] text-[#A1a1a1] rounded-full">Sql</div>
+                                    </div>
+                                    <p class="py-3 text-xs font-inter font-normal focus:outline-none text-[#A1a1a1]">
+                                        In my Portfolio Project, I focused on fixing and cleaning Nashville Housing property data using SQL. Through rigorous data cleaning techniques, I resolved inconsistencies and errors, ensuring the dataset's accuracy and reliability. This enabled meaningful analysis and valuable insights for housing market trends and decision-making processes.</p>
+                                    <a href="https://github.com/hariskhan317/COVID-PORTFOLIO-PROJECT-DATA-EXPLORATION" target="_blank" class="mt-6 text-[#14b8a6] text-base font-inter hover:underline transition-all delay-100">View Project <i class="fa-solid fa-arrow-right-long text-sm "></i> </a>
+                                </div>
+                            </div>
+                            <!-- Project-5 -->
+                            <div class="mt-5 grid grid-cols-7 gap-10 border border-transparent hover:border-[rgba(63,63,70,.4)] rounded-lg p-3 hover:bg-[#252529] transition-all delay-100 ">
+                                <div class="col-span-3 relative">
+                                    <div class="absolute top-0 left-0 h-full w-full rounded-lg" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+                                    <div class="">
+                                        <img src="./img/covid19.avif" class="w-full border border-[rgba(63,63,70,.4)] rounded-lg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-span-4">
+                                    <div class="mt-1 flex justify-between">
+                                        <h1 class="text-2xl font-inter font-semibold focus:outline-none text-[#e5e7eb]">COVID-19 Data</h1>
+                                        <div class="px-2 pt-1 h-7 text-xs border-2 border-[rgba(63,63,70,.4)] font-inter font-semibold bg-[#252529] text-[#A1a1a1] rounded-full">Tableau</div>
+                                    </div>
+                                    <p class="py-3 text-xs font-inter font-normal focus:outline-none text-[#A1a1a1]">In my Portfolio Project, I utilized Tableau to create compelling visualizations and graphs for COVID-19 data. Through interactive dashboards, I presented key trends, patterns, and insights, providing a comprehensive view of the pandemic's impact. The visualizations effectively communicated complex information to facilitate data-driven decision-making.</p>
+                                    <a href="https://public.tableau.com/app/profile/haris.khan5591/viz/CovidDeathVaccine/Dashboard1?publish=yes" target="_blank" class="text-[#14b8a6] text-base font-inter hover:underline transition-all delay-100">View Project <i class="fa-solid fa-arrow-right-long text-sm  "></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="">
+                <h2 id="footer-heading" class="sr-only">Footer</h2>
+                <div class="mt-20">
+                    <div class="flex justify-between ">
+                        <div>
+                            <h3 class="text-sm font-semibold font-inter text-white mb-3"><i class="fa-solid fa-location-dot pr-2"></i> Address</h3>
+                            <p class="text-sm font-inter text-[#A1a1a1]">Staten Island, Ny 10314</p>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold font-inter text-white mb-3"><i class="fa-solid fa-phone pr-2"></i>Phone</h3>
+                            <a class="text-sm font-inter text-[#A1a1a1]" href="tel:+9295989243">(929)598-9243</a>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold font-inter text-white mb-3"><i class="fa-solid fa-envelope pr-2"></i>Email</h3>
+                            <a class="text-sm font-inter text-[#A1a1a1]" href="mailto:harisgujjar317@gmail.com">harisgujjar317@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="mt-6 border-t border-white/10"> 
+                        <p class="pt-4 text-center text-sm text-[#A1a1a1] md:order-1 md:mt-0">&copy; 2023 Haris Khan, Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer> 
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+</html>
+
+<!-- npx tailwindcss -i tailwind.css -o ./layouts/style/tailwind.css --watch -->
