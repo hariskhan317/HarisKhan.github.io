@@ -10,6 +10,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.tablink{
+				color:#423730;
+			}
+			.active{
+				color: #49bf9d !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -37,72 +45,92 @@
 
 				<!-- Two -->
 				<section id="two">
-					<h1 style="color:#423730;font-weight: 600 !important;">Recent Work</h1>
-					<div class="grid-container" >
-						<!-- 1 -->
-						<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/WorldPopulation_16886888523310/Dashboard1" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/01.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important; font-weight: 600 !important;">World Population - <strong style="color:white !important;">TABLEAU</strong></h3>
-								<p style="color:white;">Using Tableau, we analyze and visualize data to gain insights and improve our understanding of the dataset.</p>
+					<h1 style="color:#423730;font-weight: 600 !important;">Recent Projects</h1>
+			
+					<div class="w3-bar w3-black" style="padding-bottom: 25px; padding-top: 15px;">
+						<a class="tablink active" style="cursor:pointer;border:none;background-color: #fff !important;font-weight: 600 !important;" onclick="openCity(event,'TABLEAU')">TABLEAU</a>
+						<a class="tablink" style="cursor:pointer;border:none;padding:0px 40px;font-weight: 600 !important;" onclick="openCity(event,'SQL')">SQL</a>
+						<a class="tablink" style="cursor:pointer;border:none;font-weight: 600 !important;" onclick="openCity(event,'PYTHON')">PYTHON</a>
+					</div>
+					
+					<div id="TABLEAU" class="project tablink">
+						<div class="grid-container" >
+							<!-- 1 -->
+							<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/WorldPopulation_16886888523310/Dashboard1" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/01.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important; font-weight: 600 !important;">World Population - <strong style="color:white !important;">TABLEAU</strong></h3>
+									<p style="color:white;">Using Tableau, we analyze and visualize data to gain insights and improve our understanding of the dataset.</p>
+								</div>
+							</a> 
+							<!-- 2 -->
+							<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/BestInvestment/Dashboard1" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/03.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">Startups Investment - <strong style="color:white !important;">TABLEAU</strong></h3>
+									<p style="color:white !important;">Leveraging Tableau, we analyze and visualize data to derive insights and enhance data comprehension.</p>
+								</div>
+							</a> 
+							<!-- 3 -->
+							<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/CovidDeathVaccine/Dashboard1?publish=yes" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/05.jpg');background-size: cover;background-repeat: no-repeat;" > 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">COVID-19 Data - <strong style="color:white !important;">TABLEAU</strong></h3>
+									<p style="color:white !important;">To facilitate data comprehension, we are generating visualizations using Tableau.</p>
+								</div>
+							</a>   
+							<!-- 4 -->
+							<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/BigTechcompaniesdatasets/Dashboard1" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/03.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">Big Tech Companies DataSets - <strong style="color:white !important;">TABLEAU</strong></h3>
+									<p style="color:white !important;">Exploring and Analyzing Big Tech Companies' Data Insights through Tableau</p>
+								</div>
+							</a>
+						</div> 
+					</div>
+					
+					<div id="SQL" class="project tablink" style="display:none">
+						<div class="grid-container" > 
+							<!-- 1 -->
+							<a href="https://github.com/hariskhan317/COVID-PORTFOLIO-PROJECT-DATA-EXPLORATION" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/02.jpg');background-size: cover;background-repeat: no-repeat;">
+								<div>
+									<h3 style="color:white !important; font-weight: 600 !important;">COVID-19 Data - <strong style="color:white;">SQL</strong></h3>
+									<p style="color:white;">Through SQL, we clean the dataset, ensuring better data comprehension and accuracy.</p>
+								</div>
+							</a> 
+							<!-- 2 -->
+							<a href="https://github.com/hariskhan317/Nashville-Portfolio-Project" target="_blank" class="image fit thumb" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/04.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">Nashville - <strong style="color:white !important;">SQL</strong></h3>
+									<p style="color:white !important;">Using SQL, we elaborate on data attributes and establish meaningful relationships between columns, leading to a better understanding of the dataset.</p>
+								</div>
+							</a>  
+							<!-- 3 -->
+							<a href="https://github.com/hariskhan317/Data-Analyst-datasets" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/01.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">Data Analyst datasets - <strong style="color:white !important;">SQL</strong></h3>
+									<p style="color:white !important;">To enhance comprehension and ensure data integrity, we are employing SQL to clean the dataset.</p>
+								</div>
+							</a>
+							<!-- 4 -->
+							<a href="https://github.com/hariskhan317/Big-Tech-Companies" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/02.jpg');background-size: cover;background-repeat: no-repeat;"> 
+								<div>
+									<h3 style="color:white !important;font-weight: 600 !important;">Big Tech Companies DataSets - <strong style="color:white !important;">SQL</strong></h3>
+									<p style="color:white !important;">Cleaning and Eloborating Big Tech Companies' Data Insights using SQL</p>
+								</div>
+							</a> 
+						</div> 
+					</div>
+					
+					<div id="PYTHON" class="project tablink" style="display:none">
+						<div class="grid-container" >
+							<div style="width: 50%;">
+								<a href="https://github.com/hariskhan317/Customer-Call-Data-Cleaning-in-Pandas" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/06.jpg');background-size: cover;background-repeat: no-repeat;"> 
+									<div>
+										<h3 style="color:white !important;font-weight: 600 !important;">Customer Call Data - <strong style="color:white !important;">PANDAS</strong></h3>
+										<p style="color:white !important;">Using Python's pandas library, we are cleansing the dataset to improve our comprehension and ensure data quality.</p>
+									</div>
+								</a>
 							</div>
-						</a>
-						<!-- 2 -->
-						<a href="https://github.com/hariskhan317/COVID-PORTFOLIO-PROJECT-DATA-EXPLORATION" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/02.jpg');background-size: cover;background-repeat: no-repeat;">
-							<div>
-								<h3 style="color:white !important; font-weight: 600 !important;">COVID-19 Data - <strong style="color:white;">SQL</strong></h3>
-								<p style="color:white;">Through SQL, we clean the dataset, ensuring better data comprehension and accuracy.</p>
-							</div>
-						</a>
-						<!-- 3 -->
-						<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/BestInvestment/Dashboard1" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/03.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Startups Investment - <strong style="color:white !important;">TABLEAU</strong></h3>
-								<p style="color:white !important;">Leveraging Tableau, we analyze and visualize data to derive insights and enhance data comprehension.</p>
-							</div>
-						</a>
-						<!-- 4 -->
-						<a href="https://github.com/hariskhan317/Nashville-Portfolio-Project" target="_blank" class="image fit thumb" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/04.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Nashville - <strong style="color:white !important;">SQL</strong></h3>
-								<p style="color:white !important;">Using SQL, we elaborate on data attributes and establish meaningful relationships between columns, leading to a better understanding of the dataset.</p>
-							</div>
-						</a>
-						<!-- 5 -->
-						<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/CovidDeathVaccine/Dashboard1?publish=yes" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/05.jpg');background-size: cover;background-repeat: no-repeat;" > 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">COVID-19 Data - <strong style="color:white !important;">TABLEAU</strong></h3>
-								<p style="color:white !important;">To facilitate data comprehension, we are generating visualizations using Tableau.</p>
-							</div>
-						</a>
-						<!-- 6 -->
-						<a href="https://github.com/hariskhan317/Customer-Call-Data-Cleaning-in-Pandas" target="_blank" class="image fit thumb center" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/06.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Customer Call Data - <strong style="color:white !important;">PANDAS</strong></h3>
-								<p style="color:white !important;">Using Python's pandas library, we are cleansing the dataset to improve our comprehension and ensure data quality.</p>
-							</div>
-						</a>
-						<!-- 7 -->
-						<a href="https://github.com/hariskhan317/Data-Analyst-datasets" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/01.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Data Analyst datasets - <strong style="color:white !important;">SQL</strong></h3>
-								<p style="color:white !important;">To enhance comprehension and ensure data integrity, we are employing SQL to clean the dataset.</p>
-							</div>
-						</a>
-						<!-- 8 -->
-						<a href="https://github.com/hariskhan317/Big-Tech-Companies" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/02.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Big Tech Companies DataSets - <strong style="color:white !important;">SQL</strong></h3>
-								<p style="color:white !important;">Cleaning and Eloborating Big Tech Companies' Data Insights using SQL</p>
-							</div>
-						</a>
-						<!-- 9 -->
-						<a href="https://public.tableau.com/app/profile/haris.khan5591/viz/BigTechcompaniesdatasets/Dashboard1" target="_blank" class="image fit thumb" style="text-align: center;border-radius: 10px; padding:4em 2em;background-image: url('images/thumbs/03.jpg');background-size: cover;background-repeat: no-repeat;"> 
-							<div>
-								<h3 style="color:white !important;font-weight: 600 !important;">Big Tech Companies DataSets - <strong style="color:white !important;">TABLEAU</strong></h3>
-								<p style="color:white !important;">Exploring and Analyzing Big Tech Companies' Data Insights through Tableau</p>
-							</div>
-						</a>
-					</div> 
+						</div> 
+					</div>
 				</section>
 
 				<!-- Three -->
@@ -218,6 +246,23 @@
 					</ul>
 				</div>
 			</footer>
+
+
+			<script> 
+				function openCity(evt, cityName) {
+					var i, x, tablinks;
+					x = document.getElementsByClassName("project");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("tablink");
+					for (i = 0; i < x.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(cityName).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
